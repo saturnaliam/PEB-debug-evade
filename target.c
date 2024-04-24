@@ -5,12 +5,12 @@
 int main(void) {
   BOOLEAN last_debug_status = IsDebuggerPresent();
 
-  printf("%s", last_debug_status ? "[-] Debugger present!" : "[+] No debugger present!");
+  printf("%s\n", last_debug_status ? "[-] Debugger present!" : "[+] No debugger present!");
 
   while (TRUE) {
     if (IsDebuggerPresent() != last_debug_status) {
       last_debug_status = IsDebuggerPresent();
-      printf("%s", last_debug_status ? "[-] Debugger present!" : "[+] No debugger present!");
+      printf("%s\n", last_debug_status ? "[-] Debugger present!" : "[+] No debugger present!");
     }
   }
 
