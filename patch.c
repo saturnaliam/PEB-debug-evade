@@ -11,7 +11,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD_PTR ul_reason_for_call, LPVOID lpRe
     #endif
 
     PPEB pPeb = (PPEB)__readgsqword(PEB_OFFSET);
-    pPeb->BeingDebugged = 1;
+    pPeb->BeingDebugged = 0;
   }
 
   return TRUE;
