@@ -1,7 +1,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <stdio.h>
-#include <winternl.h>
 
 int main(void) {
   BOOLEAN last_debug_status = IsDebuggerPresent();
