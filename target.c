@@ -5,6 +5,7 @@
 int main(void) {
   BOOLEAN last_debug_status = IsDebuggerPresent();
 
+  printf("Process PID: %d\n", GetCurrentProcessId());
   printf("%s\n", last_debug_status ? "[-] Debugger present!" : "[+] No debugger present!");
 
   while (TRUE) {
